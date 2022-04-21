@@ -1,0 +1,46 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx, subfigure}
+\usepackage{lineno}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage[absolute]{textpos}		
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage[a4paper, top = 2.54cm,
+bottom = 2.54cm,
+left = 2.54cm,
+right = 2.54cm]{geometry}
+
+\onehalfspacing
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+\fancypagestyle{plain}{
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhf{}
+    \fancyfoot[R]{\thepage}
+}
+
+\setdefaultlanguage{romanian}
+\setotherlanguages{english}
+
+\SetLanguageKeys{romanian}{indentfirst=true}
+
+\begin{document}
+
+\include{0-title}
+
+\cleardoublepage
+\tableofcontents
+
+\end{document}
