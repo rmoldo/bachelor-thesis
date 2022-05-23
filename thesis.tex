@@ -6,17 +6,27 @@
 \usepackage{lineno}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{csquotes}
 \usepackage{listings}
-\usepackage[english]{babel}
-\usepackage{cite}
 \usepackage{fancyhdr}
 \usepackage[absolute]{textpos}		
 \usepackage{fontspec}
 \usepackage{polyglossia}
+\usepackage[backend=biber,
+style=ieee,
+sorting=nty]{biblatex}
 \usepackage[a4paper, top = 2.54cm,
 bottom = 2.54cm,
 left = 2.54cm,
 right = 2.54cm]{geometry}
+
+\addbibresource{bibliography.bib}
+
+\DeclareQuoteStyle{romanian}
+  {\quotedblbase}
+  {\textquotedblright}
+  {\guillemotleft}
+  {\guillemotright}
 
 \onehalfspacing
 
@@ -42,5 +52,10 @@ right = 2.54cm]{geometry}
 
 \cleardoublepage
 \tableofcontents
+
+\include{1-introduction}
+\include{2-studiu-bibliografic}
+
+\printbibliography
 
 \end{document}
